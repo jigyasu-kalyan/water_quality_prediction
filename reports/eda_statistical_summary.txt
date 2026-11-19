@@ -1,0 +1,61 @@
+======================================================================
+WATER QUALITY MONITORING DATASET - EXPLORATORY DATA ANALYSIS
+Author: Jigyasu (Phase 1 Data Ingestion & Profiling)
+======================================================================
+
+1. Dataset Shape: 50000 rows x 14 columns
+
+2. Features Identified:
+   - Country (dtype: object)
+   - Area (dtype: object)
+   - Waterbody Type (dtype: object)
+   - Date (dtype: object)
+   - Ammonia (mg/l) (dtype: float64)
+   - Biochemical Oxygen Demand (mg/l) (dtype: float64)
+   - Dissolved Oxygen (mg/l) (dtype: float64)
+   - Orthophosphate (mg/l) (dtype: float64)
+   - pH (ph units) (dtype: float64)
+   - Temperature (cel) (dtype: float64)
+   - Nitrogen (mg/l) (dtype: float64)
+   - Nitrate (mg/l) (dtype: float64)
+   - CCME_Values (dtype: float64)
+   - CCME_WQI (dtype: object)
+
+3. Missing Value Audit:
+                                  Missing Count  Percentage (%)
+Country                                       0             0.0
+Area                                          0             0.0
+Waterbody Type                                0             0.0
+Date                                          0             0.0
+Ammonia (mg/l)                                0             0.0
+Biochemical Oxygen Demand (mg/l)              0             0.0
+Dissolved Oxygen (mg/l)                       0             0.0
+Orthophosphate (mg/l)                         0             0.0
+pH (ph units)                                 0             0.0
+Temperature (cel)                             0             0.0
+Nitrogen (mg/l)                               0             0.0
+Nitrate (mg/l)                                0             0.0
+CCME_Values                                   0             0.0
+CCME_WQI                                      0             0.0
+
+4. Summary Statistics (Numeric Physical-Chemical Parameters):
+                                    count       mean        std        min        25%        50%      75%      max
+Ammonia (mg/l)                    50000.0   0.965156   5.435124   0.000000   0.030000   0.079000    0.232  170.000
+Biochemical Oxygen Demand (mg/l)  50000.0   4.343384  13.337479   0.000000   2.250000   2.700000    2.700  255.000
+Dissolved Oxygen (mg/l)           50000.0  10.179964   1.678608   0.000010   9.810000  10.200000   11.100   19.900
+Orthophosphate (mg/l)             50000.0   0.253470   1.186734   0.000000   0.035000   0.143000    0.144   93.100
+pH (ph units)                     50000.0   7.830614   0.435330   2.220000   7.750000   7.780000    8.050   19.445
+Temperature (cel)                 50000.0  11.391778   4.192438   0.000000   8.300000  11.460000   14.100   96.400
+Nitrogen (mg/l)                   50000.0   5.172898   5.083411   0.000000   1.400000   5.000000    6.300   46.000
+Nitrate (mg/l)                    50000.0   5.744880   6.224358   0.000000   2.490000   4.500000    6.630  150.000
+CCME_Values                       50000.0  87.607424  12.436847  37.241584  83.115734  89.633936  100.000  100.000
+
+5. Categorical Target (CCME_WQI Class Distribution):
+           Count  Percentage (%)
+CCME_WQI                        
+Good       26344          52.688
+Excellent  13570          27.140
+Fair        6670          13.340
+Marginal    2960           5.920
+Poor         456           0.912
+

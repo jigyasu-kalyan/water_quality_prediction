@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+reports/figures/*.png
+models/*.joblib
+models/*.pkl
+data/water_quality_dataset.csv
